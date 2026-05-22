@@ -1,0 +1,69 @@
+{
+  "target_priority": [
+    "bug",
+    "documentation",
+    "feature",
+    "question",
+    "other"
+  ],
+  "process_labels_ignored": [
+    "needs triage",
+    "needs discussion",
+    "good first issue",
+    "priority",
+    "stale",
+    "wontfix",
+    "duplicate",
+    "invalid",
+    "help wanted",
+    "easy",
+    "blocker"
+  ],
+  "rows": 600,
+  "target_distribution": {
+    "bug": 227,
+    "other": 174,
+    "feature": 92,
+    "documentation": 84,
+    "question": 23
+  },
+  "top_raw_labels": {
+    "Bug": 143,
+    "00 - Bug": 84,
+    "Needs Triage": 59,
+    "Enhancement": 47,
+    "Docs": 43,
+    "Needs Discussion": 30,
+    "New Feature": 29,
+    "04 - Documentation": 27,
+    "Array API": 21,
+    "Closing Candidate": 20,
+    "IO HDF5": 19,
+    "Documentation": 19,
+    "01 - Enhancement": 17,
+    "Callbacks": 17,
+    "Arrow": 15,
+    "Indexing": 14,
+    "57 - Close?": 13,
+    "Regression": 13,
+    "Strings": 13,
+    "Datetime": 12,
+    "Performance": 12,
+    "41 - Static typing": 11,
+    "39 - free-threading": 10,
+    "API Design": 9,
+    "Reshaping": 9,
+    "Needs Decision": 9,
+    "33 - Question": 8,
+    "Index": 8,
+    "Copy / view semantics": 8,
+    "Error Reporting": 8
+  },
+  "category_match_counts_before_priority": {
+    "other": 174,
+    "bug": 227,
+    "documentation": 89,
+    "question": 41,
+    "feature": 94
+  }
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "github-issue-mining"
+version = "0.1.0"
+description = "Mining and categorizing GitHub issues using data mining techniques."
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "requests",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

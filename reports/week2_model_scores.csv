@@ -1,0 +1,5 @@
+model,feature_type,accuracy,macro_f1,weighted_f1,k,distance_metric,notes
+Logistic Regression,tfidf,0.6833333333333333,0.5427717327717327,0.6735957548457548,,,Cleaned text + class balancing
+Multinomial Naive Bayes,tfidf,0.7,0.5377289377289377,0.673519536019536,,,Cleaned text baseline
+KNN,tfidf,0.6583333333333333,0.516236803263528,0.6355902912106253,7,cosine,Cleaned text + cosine
+KNN,manual_scaled,0.6583333333333333,0.5060432947149992,0.6293022266334527,7,minkowski,Best simple KNN manual setting from KNN run
