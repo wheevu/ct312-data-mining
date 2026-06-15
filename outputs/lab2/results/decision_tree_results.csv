@@ -1,0 +1,25 @@
+dataset,criterion,min_samples_split,mean_accuracy,std_accuracy
+Breast Cancer,gini,2,0.9104,0.0279
+Breast Cancer,gini,5,0.9051,0.0263
+Breast Cancer,gini,10,0.9086,0.0181
+Breast Cancer,gini,20,0.9139,0.0194
+Breast Cancer,entropy,2,0.9384,0.0217
+Breast Cancer,entropy,5,0.9244,0.0227
+Breast Cancer,entropy,10,0.9191,0.0263
+Breast Cancer,entropy,20,0.9262,0.0353
+Wine,gini,2,0.8932,0.0380
+Wine,gini,5,0.8821,0.0377
+Wine,gini,10,0.8878,0.0306
+Wine,gini,20,0.8878,0.0306
+Wine,entropy,2,0.9095,0.0637
+Wine,entropy,5,0.9040,0.0641
+Wine,entropy,10,0.9154,0.0474
+Wine,entropy,20,0.9210,0.0489
+Optical Digits,gini,2,0.8963,0.0109
+Optical Digits,gini,5,0.8966,0.0093
+Optical Digits,gini,10,0.8941,0.0108
+Optical Digits,gini,20,0.8863,0.0116
+Optical Digits,entropy,2,0.9050,0.0112
+Optical Digits,entropy,5,0.9020,0.0109
+Optical Digits,entropy,10,0.8970,0.0106
+Optical Digits,entropy,20,0.8883,0.0081

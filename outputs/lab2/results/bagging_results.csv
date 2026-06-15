@@ -1,0 +1,4 @@
+dataset,n_estimators,mean_accuracy,std_accuracy
+Breast Cancer,50,0.9578,0.0187
+Wine,50,0.9551,0.0339
+Optical Digits,50,0.9619,0.0087

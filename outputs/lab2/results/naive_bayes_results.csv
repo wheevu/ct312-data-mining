@@ -1,0 +1,4 @@
+dataset,accuracy
+Breast Cancer,0.9357
+Wine,1.0000
+Optical Digits,0.7942

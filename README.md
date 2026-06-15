@@ -11,6 +11,7 @@ Current project direction: mining GitHub issues and categorizing them using data
 | Week | Topic / Focus | Project Work | Status |
 |------|--------------|--------------|--------|
 | 2 | GitHub Issue Mining Setup | Repo structure, data collection, preprocessing notes, dataset evaluation | Complete |
+| 6 | Classification Algorithms | KNN, Decision Tree, Naive Bayes, SVM, Ensemble methods on UCI datasets | Complete |
 
 ---
 
@@ -65,3 +66,52 @@ python scripts/compare_models.py
 ```
 
 **Notes.** Small dataset, noisy labels, repo-specific conventions. The professor's reminder: compare algorithms and justify your choice, don't just report numbers.</details>
+
+<details>
+<summary>Week 6 -- Classification Algorithms</summary>
+
+**Goal.** Implement and evaluate 5 classification algorithms on 4 standard UCI datasets using cross-validation. Compare performance and understand each algorithm's behavior.
+
+**Data.**
+
+| Dataset | Instances | Features | Classes |
+|---|---|---|---|
+| Iris | 150 | 4 | 3 |
+| Wine | 178 | 13 | 3 |
+| Breast Cancer (WDBC) | 569 | 30 | 2 |
+| Optical Digits | 5620 | 64 | 10 |
+
+**Algorithms & best accuracy.**
+
+| Algorithm | Breast Cancer | Wine | Optical Digits | Notebook/File |
+|---|---|---|---|---|
+| KNN | 0.9666 (k=3) | 0.9717 (k=5) | 0.9792 (k=1) | `scripts/lab2/01_knn.py` |
+| Decision Tree | 0.9384 (entropy, s=2) | 0.9210 (entropy, s=20) | 0.9050 (entropy, s=2) | `scripts/lab2/02_decision_tree.py` |
+| Gaussian NB | 0.9357 | 1.0000 | 0.7942 | `scripts/lab2/03_naive_bayes.py` |
+| SVM | 0.9807 (rbf, C=10, γ=0.01) | 0.9887 (rbf, C=1, γ=0.01) | 0.9895 (rbf, C=10, γ=0.01) | `scripts/lab2/04_svm.py` |
+| Bagging (50) | 0.9578 | 0.9551 | 0.9619 | `scripts/lab2/05_ensemble.py` |
+| AdaBoost (d=3) | 0.9684 | 0.9605 (d=2) | 0.9331 (d=3) | `scripts/lab2/05_ensemble.py` |
+| Random Forest (100) | 0.9543 | 0.9775 | 0.9843 | `scripts/lab2/05_ensemble.py` |
+
+**Key findings.**
+
+- **SVM with RBF kernel** was the strongest overall — consistently best or near-best across all 3 larger datasets.
+- **Naive Bayes** hit 100% on Wine (separability) but struggled with Optical Digits (features aren't independent).
+- **Decision Tree** performance improved with entropy over gini on most datasets.
+- **AdaBoost** depth mattered more for complex data: Optical Digits needed depth 3, while Wine peaked at depth 2.
+- **Random Forest** matched SVM on digits without hyperparameter tuning — strong default choice.
+- Scaling (StandardScaler) was essential for KNN and SVM.
+
+**Run it.**
+
+```bash
+python scripts/lab2/01_knn.py
+python scripts/lab2/02_decision_tree.py
+python scripts/lab2/03_naive_bayes.py
+python scripts/lab2/04_svm.py
+python scripts/lab2/05_ensemble.py
+```
+
+**Datasets** in `data/lab2/`, outputs (results CSVs, plots) in `outputs/lab2/`.
+
+**Lessons.** No single algorithm dominates — choice depends on data size, feature independence, and scaling requirements. Ensemble methods (RF, Bagging) provide robustness with minimal tuning. SVM is worth the tuning effort for clean, well-scaled data.</details>

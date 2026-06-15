@@ -1,0 +1,16 @@
+dataset,k,mean_accuracy,std_accuracy
+Breast Cancer,1,0.9508,0.0204
+Breast Cancer,2,0.9526,0.0142
+Breast Cancer,3,0.9666,0.0171
+Breast Cancer,4,0.9666,0.0171
+Breast Cancer,5,0.9631,0.0179
+Wine,1,0.9551,0.0223
+Wine,2,0.9495,0.0207
+Wine,3,0.9662,0.0211
+Wine,4,0.9552,0.0285
+Wine,5,0.9717,0.0181
+Optical Digits,1,0.9792,0.0029
+Optical Digits,2,0.9756,0.0029
+Optical Digits,3,0.9792,0.0016
+Optical Digits,4,0.9762,0.0014
+Optical Digits,5,0.9756,0.0028
